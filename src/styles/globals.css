@@ -1,24 +1,29 @@
 @import "tailwindcss";
 
 @theme {
-  /* Brand Primary Colors */
-  --color-primary: #F95738;
-  --color-primary-hover: #E0482B;
-  --color-primary-light: #FFF0ED;
+  /* Brand Primary Colors (Extracted from ALSAIF Logo) */
+  --color-primary: #E31B23;          /* Bold ALSAIF Red */
+  --color-primary-hover: #C21219;    /* Darker active red */
+  --color-primary-light: #FDE8E9;   /* Subtle soft red tint for badges/accents */
+
+  /* Secondary Brand Colors (ALSAIF Deep Blue) */
+  --color-secondary: #1F3882;        /* ALSAIF Navy Blue */
+  --color-secondary-hover: #172B66;  /* Darker active blue */
+  --color-secondary-light: #EEF2FB;  /* Subtle soft blue tint for cards/badges */
 
   /* Surface & Background Colors */
-  --color-bg-main: #FDFBF7;
-  --color-bg-surface: #FFFFFF;
-  --color-bg-alt: #F3F4F6;
+  --color-bg-main: #FAFCFF;          /* Crisp light background with subtle cool tint */
+  --color-bg-surface: #FFFFFF;       /* Pure White for cards & navbar */
+  --color-bg-alt: #F0F4F8;           /* Light slate for alternating sections */
 
   /* Text & Typography Colors */
-  --color-heading: #0D1317;
-  --color-body: #4A5568;
-  --color-muted: #718096;
+  --color-heading: #141B2D;          /* Dark navy-black for strong headings */
+  --color-body: #334155;             /* Readable dark slate body text */
+  --color-muted: #64748B;            /* Subtle text */
 
   /* Border & Radius Tokens */
-  --color-border-subtle: #E2E8F0;
-  --color-border-accent: #F95738;
+  --color-border-subtle: #E2E8F0;    /* Light clean border stroke */
+  --color-border-accent: #E31B23;    /* Red highlight border */
 
   --radius-sm: 0.375rem;
   --radius-md: 0.75rem;
