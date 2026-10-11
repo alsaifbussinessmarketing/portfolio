@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap');
 @import "tailwindcss";
 
 @theme {
+  /* Font Family Token */
+  --font-lexend: 'Lexend', sans-serif;
+
   /* Brand Primary Colors (Extracted from ALSAIF Logo) */
   --color-primary: #E31B23;          /* Bold ALSAIF Red */
   --color-primary-hover: #C21219;    /* Darker active red */
@@ -11,8 +15,8 @@
   --color-secondary-hover: #172B66;  /* Darker active blue */
   --color-secondary-light: #EEF2FB;  /* Subtle soft blue tint for cards/badges */
 
-  /* Surface & Background Colors */
-  --color-bg-main: #FAFCFF;          /* Crisp light background with subtle cool tint */
+  /* Surface & Exact Match Background Colors */
+  --color-bg-main: #F7F9FC;          /* Exact match: rgb(247, 249, 252) */
   --color-bg-surface: #FFFFFF;       /* Pure White for cards & navbar */
   --color-bg-alt: #F0F4F8;           /* Light slate for alternating sections */
 
@@ -30,15 +34,24 @@
   --radius-lg: 1.25rem;
 }
 
-/* Base resets & typography */
+/* Global Font & Resets */
+*, ::before, ::after {
+  font-family: 'Lexend', sans-serif;
+}
+
 body {
   background-color: var(--color-bg-main);
   color: var(--color-body);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family: 'Lexend', sans-serif;
   overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: var(--color-heading);
-  letter-spacing: -0.02em;
+  font-family: 'Lexend', sans-serif;
+  letter-spacing: -0.03em;
+}
+
+button, input, select, textarea {
+  font-family: 'Lexend', sans-serif;
 }

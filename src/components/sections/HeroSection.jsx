@@ -57,7 +57,7 @@ export const HeroSection = () => {
           {/* Character Visualization */}
           <div className="relative w-full max-w-sm sm:max-w-md lg:max-w-lg aspect-4/3 flex justify-center items-center">
             <Image
-              src="/assets/hero2.jpeg"
+              src="/assets/hero3.png"
               alt="Professional UX Designer Sitting on Chair"
               width={500}
               height={380}
